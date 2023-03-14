@@ -1,0 +1,566 @@
+/* At max-width: 1290px */
+/* Heading */
+
+
+/* Navigation */
+
+
+/* Section : Home */
+
+
+/* Section : Services */
+#services-section .servicesItem {
+    height: 450px;
+    width: 250px;
+}
+
+#services-section .servicesItem img {
+    width: 194px;
+    height: 141px;
+    margin-top: -12px;
+    margin-bottom: 20px;
+}
+
+#services-section .servicesItem h1 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+#services-section .servicesItem p {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+/* Section : Clients */
+#clients-section .clients .clientsItems {
+    width: 82px;
+    margin: -30px 36px;
+}
+
+/* Section : Contact Us */
+#contactus-section:before {
+    height: 600px;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+
+/* Utility Classes */
+.primaryHeading {
+    font-size: 2.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.secondaryHeading {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.primaryColor {
+    color: white;
+}
+
+.secondaryColor {
+    color: black;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+
+/* At max-width: 990px */
+@media screen and (max-width: 990px) {
+
+    /* Header */
+
+    /* Navigation */
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar div img {
+        margin-left: -24px;
+    }
+
+    #navbar ul {
+        margin-top: -21px;
+        margin-left: 36px;
+    }
+
+    /* Section : Home */
+
+    /* Section : Services */
+    #services-section {
+        margin-top: 130px;
+    }
+
+    #services-section .servicesItem {
+        height: 420px;
+        width: 200px;
+        margin: 25px;
+    }
+
+    #services-section .servicesItem img {
+        width: 134px;
+        height: 91px;
+        margin-top: -12px;
+        margin-bottom: 20px;
+    }
+
+    #services-section .servicesItem h1 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    #services-section .servicesItem p {
+        font-size: 0.85rem;
+        padding: 10px 20px;
+    }
+
+    /* Section : Clients */
+    #clients-section .clients .clientsItems {
+        margin: 20px;
+        width: 80px;
+    }
+
+    #clients-section .clients #clientsItems2 {
+        width: 150px;
+        margin-top: -15px;
+    }
+
+    #clients-section .clients #clientsItems4 {
+        width: 150px;
+    }
+
+    /* Section : Contact Us */
+    #contactus-section:before {
+        height: 600px;
+    }
+
+    /* Utility Classes */
+    .primaryHeading {
+        font-size: 2.5rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .secondaryHeading {
+        font-size: 1rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .centerText {
+        text-align: center;
+    }
+
+    .primaryColor {
+        color: white;
+    }
+
+    .secondaryColor {
+        color: black;
+    }
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 753px) {
+
+    /* Navigation */
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #navbar::before {
+        opacity: 0.8;
+    }
+
+    #navbar div img {
+        margin-left: 6px;
+    }   
+
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: -175px;
+        left: -36px;
+        background-color: black;
+        opacity: 0.8;
+        width: 100%;
+        height: 190px;
+        transition: all .5s;
+        z-index: -1;
+    }
+
+    #navbar #check:checked~ul {
+        top: 104px;
+        color: white;
+    }
+
+    #navbar #img {
+        margin: 0 10px;
+    }
+
+    #navbar ul li {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    #navbar ul li a {
+        color: white;
+    }
+
+    #navbar ul li a:hover,
+    #navbar ul .active a {
+        color: white;
+        background: none;
+        text-decoration: underline;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+    }
+
+    #navbar label {
+        display: inline-block;
+        top: 25px;
+        right: 25px;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        transition: all .5s;
+    }
+
+    #navbar #check:checked~label {
+        transform: rotate(-90deg);
+    }
+
+    /* Section : Home */
+    #home-section:before {
+        height: 496px;
+    }
+
+    #home-section h1 {
+        margin: 8px;
+        width: 331px;
+        margin-bottom: 24px;
+    }
+
+    #ordernowbtn {
+        padding: 5px 0px;
+        border-radius: 10px;
+        font-size: 19px;
+        width: 180px;
+        margin-top: 52px;
+    }
+
+    /* Section : Services */
+    #services-section h1 {
+        margin-top: -102px;
+    }
+
+    #services-section .services {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    #services-section .servicesItem {
+        height: 420px;
+        width: 382px;
+        margin: 10px;
+    }
+
+    #services-section .servicesItem img {
+        width: 253px;
+        height: 188px;
+        margin-top: -13px;
+        margin-bottom: 110px;
+    }
+
+    #services-section .servicesItem h1 {
+        font-size: 1.8rem;
+        margin-bottom: 3px;
+    }
+
+    #services-section .servicesItem p {
+        font-size: 1rem;
+        padding: 10px 23px;
+    }
+
+    /* Section : Clients */
+    #clients-section {
+        margin-bottom: -47px;
+    }
+
+    #clients-section h1 {
+        margin-top: 14px;
+    }
+
+    #clients-section .clients .clientsItems {
+        margin: 8px;
+        width: 55px;
+    }
+
+    #clients-section .clients #clientsItems2 {
+        width: 103px;
+        margin-top: -24px;
+    }
+
+    #clients-section .clients #clientsItems4 {
+        width: 103px;
+    }
+
+    /* Section - Contact Us */
+    #contactus-section:before {
+        height: 543px;
+    }
+
+    #contactus-section #contactus-form .form-group label {
+        margin-left: 19px;
+    }
+
+    #contactus-section #contactus-form .form-group input {
+        padding: 8px 5px;
+        width: 317px;
+        align-self: center;
+        font-size: 17px;
+    }
+
+    #contactus-section #contactus-form .form-group textarea {
+        font-size: 17px;
+        padding: 8px 5px;
+        align-self: center;
+        width: 317px;
+    }
+
+    #contactus-section #contactus-form .btn {
+        margin: 13px 80px;
+        margin-bottom: 16px;
+        padding: 5px 0px;
+        width: 193px;
+    }
+
+    /* Utility Classes */
+    .primaryHeading {
+        font-size: 2rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .secondaryHeading {
+        font-size: 1rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .centerText {
+        text-align: center;
+    }
+
+    .primaryColor {
+        color: white;
+    }
+
+    .secondaryColor {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    /* Navigation */
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: -175px;
+        background-color: black;
+        opacity: 0.8;
+        width: 100%;
+        height: 190px;
+        transition: all .5s;
+        z-index: -1;
+    }
+
+    #navbar #check:checked~ul {
+        top: 104px;
+        color: white;
+    }
+
+    #navbar #img {
+        margin: 0 10px;
+    }
+
+    #navbar ul li {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    #navbar ul li a {
+        color: white;
+    }
+
+    #navbar ul li a:hover,
+    #navbar ul .active a {
+        color: white;
+        background: none;
+        text-decoration: underline;
+        text-decoration-line: underline;
+        text-decoration-thickness: 2px;
+    }
+
+    #navbar label {
+        display: inline-block;
+        top: 25px;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        transition: all .5s;
+    }
+
+    #navbar #check:checked~label {
+        transform: rotate(-90deg);
+    }
+
+
+    /* Section : Home */
+    #home-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        padding: 150px;
+        width: 100%;
+    }
+
+    #home-section h1 {
+        font-size: 1.4rem;
+        width: 236px;
+        margin: 18px;
+        margin-bottom: 15px;
+    }
+
+    #home-section p {
+        font-size: 1rem;
+        width: 208px;
+        margin-bottom: 27px;
+    }
+
+    #home-section #ordernowbtn {
+        margin: 20px 20px;
+        padding: 4px 0px;
+        width: 137px;
+        border-radius: 18px;
+    }
+
+    /* Section : Services */
+    #services-section .services {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #services-section .servicesItem {
+        height: 420px;
+        width: 252px;
+        margin: 10px;
+    }
+
+    #services-section .servicesItem img {
+        width: 183px;
+        height: 128px;
+        margin-top: -56px;
+        margin-bottom: 111px;
+    }
+
+    #services-section .servicesItem h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1px;
+    }
+
+    #services-section .servicesItem p {
+        font-size: 0.96rem;
+        padding: 10px 23px;
+        margin-bottom: -42px;
+    }
+
+    /* Section : Clients */
+    #clients-section .clients .clientsItems {
+        margin: 4px;
+        width: 40px;
+    }
+
+    #clients-section .clients #clientsItems2 {
+        width: 77px;
+        margin-top: -29px;
+    }
+
+    #clients-section .clients #clientsItems4 {
+        width: 77px;
+    }
+
+    /* Section : Contact Us */
+    #contactus-section:before {
+        height: 519px;
+    }
+
+    #contactus-section #contactus-form .form-group label {
+        margin-left: 71px;
+    }
+
+    #contactus-section #contactus-form .form-group input {
+        padding: 8px 5px;
+        width: 211px;
+        align-self: center;
+        font-size: 17px;
+    }
+
+    #contactus-section #contactus-form .form-group textarea {
+        font-size: 17px;
+        padding: 8px 5px;
+        align-self: center;
+        width: 211px;
+    }
+
+    #contactus-section #contactus-form .btn {
+        margin: 13px 80px;
+        margin-bottom: 16px;
+        padding: 5px 0px;
+        width: 123px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 11px;
+        margin-top: 8px;
+    }
+
+    /* Utility Classes */
+    .primaryHeading {
+        font-size: 1.5rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .secondaryHeading {
+        font-size: 0.7rem;
+        font-family: 'Bree Serif', serif;
+    }
+
+    .centerText {
+        text-align: center;
+    }
+
+    .primaryColor {
+        color: white;
+    }
+
+    .secondaryColor {
+        color: black;
+    }
+}

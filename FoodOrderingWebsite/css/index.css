@@ -1,0 +1,318 @@
+/* Reseting HTML Page */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Navigation */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* Navigation : Image */
+#navbar #img {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px;
+    margin-left: -4px;
+    padding: 0 10px;
+}
+
+#navbar div img {
+    margin-left: 0px;
+    width: 85px;
+    height: 84px;
+}
+
+/* Navigation : List */
+#navbar ul {
+    display: flex;
+    margin: 0 11px;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    margin: 20px 4px;
+
+}
+
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 6px 20px;
+}
+
+#navbar ul li a:hover,
+#navbar ul .active a {
+    background-color: white;
+    color: black;
+    padding: 3px 20px;
+    border-radius: 30px;
+}
+
+#navbar #check {
+    display: none;
+}
+
+#navbar label {
+    position: absolute;
+    right: 50px;
+    display: none;
+}
+
+/* Section :: Home */
+#home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    padding: 150px;
+}
+
+#home-section:before {
+    content: "";
+    position: absolute;
+    height: 660px;
+    /* here don't specify the height in % as it will change according 
+                            to the height of the device which will affect the responsiveness 
+                            of the img element. */
+    /* Setting height in pixels will make your img to have same height even if the height of the device changes. */
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url('../img/backgrounds/mainBackground.jpg') no-repeat center center/cover;
+    opacity: 0.9;
+    z-index: -2;
+}
+
+#home-section h1 {
+    margin: 20px;
+}
+
+#ordernowbtn {
+    color: white;
+    margin: 35px 20px;
+    padding: 9px 0px;
+    border-radius: 10px;
+    font-size: 23px;
+    width: 250px;
+    background-color: rgb(226, 46, 46);
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#ordernowbtn:hover {
+    background-color: red;
+}
+
+/* Section :: Services */
+#services-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 190px;
+}
+
+#services-section .services {
+    display: flex;
+}
+
+#services-section .servicesItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 350px;
+    margin: 50px 40px;
+    border: 2px solid red;
+    border-radius: 34px;
+}
+
+#services-section .servicesItem img {
+    width: 230px;
+    height: 170px;
+    margin-top: -60px;
+    margin-bottom: 20px;
+}
+
+#services-section .servicesItem h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#services-section .servicesItem p {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+/* Section :: Clients */
+#clients-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#clients-section:before {
+    content: "";
+    position: absolute;
+    height: 310px;
+    width: 100%;
+    background: url('../img/backgrounds/clientBackground.jpg') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients-section .clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#clients-section .clients .clientsItems {
+    width: 150px;
+    margin: -30px 60px;
+    padding: 0 4px;
+}
+
+#clients-section .clients #clientsItems1 {
+    margin-top: -47px;
+}
+
+#clients-section .clients #clientsItems2 {
+    width: 220px;
+}
+
+#clients-section .clients #clientsItems3 {
+    margin-top: -47px;
+}
+
+#clients-section .clients #clientsItems4 {
+    width: 20rem;
+    margin-top: -40px;
+}
+
+/* Section :: Contact Us */
+#contactus-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+#contactus-section:before {
+    content: "";
+    position: absolute;
+    height: 630px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url('../img/backgrounds/contactBackground.jpg') no-repeat center center/cover;
+    z-index: -1;
+}
+
+#contactus-section #contactus-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#contactus-section #contactus-form .form-group input {
+    padding: 8px 5px;
+    width: 600px;
+    font-size: 20px;
+    outline: none;
+    /* used to remove inner decoration of input and textarea element */
+    border: 1px solid black;
+}
+
+#contactus-section #contactus-form .form-group textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 8px 5px;
+    outline: none;
+    border: 1px solid black;
+}
+
+#contactus-section #contactus-form .btn {
+    margin: 15px 109px;
+    color: white;
+    background-color: rgb(226, 46, 46);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px 0;
+    cursor: pointer;
+    width: 382px;
+}
+
+#contactus-section #contactus-form .btn:hover {
+    background-color: red;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    padding: 20px 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Utilities Classes */
+.primaryHeading {
+    font-size: 3.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.secondaryHeading {
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.primaryColor {
+    color: white;
+}
+
+.secondaryColor {
+    color: black;
+}
