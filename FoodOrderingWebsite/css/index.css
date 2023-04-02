@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
 /* Reseting HTML Page */
 * {
     margin: 0px;
@@ -69,6 +71,10 @@ header {
     padding: 6px 20px;
 }
 
+#navbar ul .active {
+    margin-right: 0px;
+}
+
 #navbar ul li a:hover,
 #navbar ul .active a {
     background-color: white;
@@ -113,11 +119,93 @@ header {
     z-index: -2;
 }
 
-#home-section h1 {
+#home-section > h1 {
     margin: 20px;
+    margin-top: 180px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#home-section > p {
+    font-size: 45px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 14px;
+}
+
+#home-section .features {
+    display: flex;
+    color: rgb(255, 18, 18);
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+#home-section .features .feature {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    width: 357px;
+    height: 166px;
+}
+
+#home-section .features .feature .feature_details {
+    margin-top: -34px;
+}
+
+#home-section .features .feature img {
+    width: 122px;
+    height: 133px;
+}
+
+#home-section .features .feature div {
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 650;
+    font-size: 24px;
+    line-height: 3;
+}
+
+#home-section .features .feature p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+}
+
+#home-section .features .feature1 {
+    width: 317;
+}
+
+#home-section .features .feature1 img {
+    margin-left: -4px;
+}
+
+#home-section .features .feature2 {
+    width: 320;
+}
+
+#home-section .features .feature2 img {
+    margin-left: 9px;
+    margin-right: 14px;
+    margin-top: -14px;
+}
+
+#home-section .features .feature3 {
+    width: 375px;
+}
+
+#home-section .features .feature3 img {
+    margin-left: -14px;
+    margin-right: 6px;
+    margin-top: -14px;
+    height: 155px;
+    width: 130px;
 }
 
 #ordernowbtn {
+    display: block;
     color: white;
     margin: 35px 20px;
     padding: 9px 0px;
@@ -133,13 +221,84 @@ header {
     background-color: red;
 }
 
+/* Section :: Menu */
+#menu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+}
+
+#menu-section .menuGrid {
+    display: grid;
+    /* grid-template-columns: repeat(3, minmax(300px, 1fr)); */
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: repeat(3, 195px);
+    gap: 10px;
+}
+
+#menu-section h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#menu-section div .menuItems {
+    height: 190px;
+    width: 295px;
+    border-radius: 10px;
+    transition: all .2s;
+}
+
+#menu-section div #menuItems1 { 
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    height: 400px;
+    width: 605px;
+}
+
+#menu-section div #menuItems4 {
+    height: 195px;
+    width: 295px;
+}
+
+#menu-section div #menuItems5 { 
+    grid-column: 2 / span 2;
+    width: 605px;
+    height: 195px;
+    background-position: center;
+    background-size: cover;
+}
+
+#menu-section div #menuItems6 { 
+    grid-row: 4 / span 2;
+    height: 415px;
+}
+
+#menu-section div #menuItems7 { 
+    height: 185px;
+}
+
+#menu-section div #menuItems8 { 
+    height: 185px;
+}
+
+#menu-section div #menuItems9 { 
+    grid-column: 2 / span 2;
+    height: 220px;
+    width: 605px;
+}
+
+#menu-section div .menuItems:hover {
+    transform: scale(1.06);
+}
+
 /* Section :: Services */
 #services-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 190px;
+    margin-top: 10px;
 }
 
 #services-section .services {
@@ -287,11 +446,107 @@ header {
 
 /* Footer */
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
     background-color: black;
     padding: 20px 10px;
     width: 100%;
     position: relative;
     bottom: 0;
+}
+
+footer .footer-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-self: center;
+    list-style: none;
+    height: 170px;
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    width: 100%;
+    font-family: 'Ubuntu', cursive;
+}
+
+footer .footer-section .customer-care li {
+    margin-bottom: 15px;
+}
+
+footer .footer-section .myaccount li {
+    margin-bottom: 15px;
+}
+
+footer .footer-section .signup li {
+    margin-bottom: 15px;
+}
+
+footer .footer-section .signup h3 {
+    margin-bottom: 15px;
+}
+
+footer .footer-section .signup .signup-letter li input {
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    width: 250px;
+    font-size: 1rem;
+    background: none;
+    color: white;
+    border: 1px solid white;
+}
+
+footer .footer-section .signup .signup-letter .btn {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+footer .footer-section .signup .signup-letter li a {
+    /* margin: 15px 0; */
+    background-color: rgb(226, 46, 46);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+footer .footer-section .signup .signup-letter a:hover {
+    background-color: red;
+}
+
+footer .footer-section .signup .followus-icons {
+    display: flex;
+}
+
+footer .footer-section .signup .followus-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+footer .footer-section .signup .followus-icons .fa-facebook:hover {
+    color: #3B5998;
+}
+
+footer .footer-section .signup .followus-icons .fa-twitter:hover {
+    color: #55ACEE;
+}
+
+footer .footer-section .signup .followus-icons .fa-instagram:hover {
+    color: #125688;
+}
+
+footer .footer-section .signup .followus-icons .fa-youtube-play:hover {
+    color: #bb0000;
+}
+
+footer .copyright {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    font-size: 1rem;
 }
 
 /* Utilities Classes */
@@ -315,4 +570,13 @@ footer {
 
 .secondaryColor {
     color: black;
+}
+
+.anchor-link-no-decorations {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-item-bottom-margin {
+    margin-bottom: 20px;
 }
