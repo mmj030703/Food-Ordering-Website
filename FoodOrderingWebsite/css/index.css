@@ -114,7 +114,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background: url('FoodOrderingWebsite/img/backgrounds/mainBackground.jpg') no-repeat center center/cover;
+    background: url("FoodOrderingWebsite/img/backgrounds/mainBackground.jpg") no-repeat center center/cover;
     opacity: 0.9;
     z-index: -2;
 }
